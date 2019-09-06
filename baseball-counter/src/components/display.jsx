@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Dashboard from "./dashboard"
 
-export const Display = ()=>{
+const Display = (props)=>{
+
     return(
+
     <div className="display">
-    
-        <section className="Buttons">
-            
-        </section>
+      Ball Count: {props.balls}
+      Strike Count: {props.strikes}
+       <Dashboard />
     </div>)
     
     }
