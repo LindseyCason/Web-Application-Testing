@@ -1,14 +1,23 @@
-import React, { useState } from "react";
-import Dashboard from "./dashboard"
+import React from "react";
 
 const Display = (props)=>{
 
     return(
 
     <div className="display">
-      Ball Count: {props.balls}
-      Strike Count: {props.strikes}
-       <Dashboard />
+      <h1>AT BAT TRACKER</h1>
+      <div className="balls">
+      <p>Ball Count:</p>
+      <div className="bCount">{props.balls}</div>
+    </div>
+
+
+
+    <div className="strikes">
+      <p>Strike Count:</p>
+      <div className="sCount">{props.strikes}</div>
+    </div>
+       
     </div>)
     
     }
